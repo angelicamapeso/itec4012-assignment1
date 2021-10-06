@@ -23,7 +23,10 @@ const SLOTH_FACTS = [
   "Sloths can slow their metabolism to hold their breath longer under water (up to 40 minutes!).",
   "It can take roughly a month or more for a sloth to digest its food.",
 ];
- 
+app.get("/api/sloths", (_req, res) => {
+  res.json(SLOTH_FACTS);
+});
+
 // Starting server
 const PORT = 9000;
 app.listen(PORT, () => {
