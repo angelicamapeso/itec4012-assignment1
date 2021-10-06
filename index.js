@@ -27,6 +27,26 @@ app.get("/api/sloths", (_req, res) => {
   res.json(SLOTH_FACTS);
 });
 
+/**
+ * Reference:
+ * "Red panda." Wikipedia. https://en.wikipedia.org/wiki/Red_panda (accessed Oct. 5, 2021).
+ */
+const RED_PANDA_FACTS = [
+  "Red pandas are carnivores.",
+  "Red pandas are endangered species. Oh no!",
+  "Comparable to the size of a house cat, red pandas are pretty small. They do, however, have a longer body.",
+  "Red pandas are well adapted to climb trees.",
+  "Red pandas enjoy a healthy diet of bamboo, eggs, birds and insects. YUM!",
+  "Like most college students during the weekend, red pandas sleep during the day and are active at night.",
+  "Red pandas start their day by grooming themselves with their tongue.",
+  "When in danger, red pandas will run for their lives. If there's nowhere to run, they stand on their hind legs and try their darndest to look intimidating.",
+  "Because of their low-calorie diets, red pandas spend their days mainly eating and sleeping. (Jealous? Me too.)",
+  "The two red panda species are the Chinese red panda and the Himalayan red panda.",
+];
+app.get("/api/red-pandas", (_req, res) => {
+  res.json(RED_PANDA_FACTS);
+});
+
 // Starting server
 const PORT = 9000;
 app.listen(PORT, () => {
