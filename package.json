@@ -4,7 +4,7 @@
   "description": "A simple Express server that serves 10 fun facts from 2 different routes.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "author": "Angelica Mapeso",
   "license": "ISC",
