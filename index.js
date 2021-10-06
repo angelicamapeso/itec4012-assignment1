@@ -43,6 +43,9 @@ const RED_PANDA_FACTS = [
   "Because of their low-calorie diets, red pandas spend their days mainly eating and sleeping. (Jealous? Me too.)",
   "The two red panda species are the Chinese red panda and the Himalayan red panda.",
 ];
+app.get("/api/red-pandas", (_req, res) => {
+  res.json(RED_PANDA_FACTS);
+});
 
 // Starting server
 const PORT = 9000;
